@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voyage musical</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Patrick Provost">
+    <meta name="description" content="Explorez le monde à travers son héritage musical.">
+    <meta name="keywords" content="musique,monde">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="contTopMenu">
+        <a href="../index.html"><img class="imgLogo" src="../images/logo.png" alt="Logo" title="Menu"></a>
+        <img class="imgToggleSpotify" onclick="toggleSpotifyDisplay()" src="../images/spotify_black.png" alt="Spotify" title="Affichage de Spotify">
+        <!-- La forme et l'emplacement du logo Spotify doivent être conformes aux directives d'image de marque décrites dans ce document: https://developer.spotify.com/branding-guidelines/ -->
+    </div>
+
+    <div class="contBottomMenu">
+        <img class="imgToggleContact" onclick="toggleContactDisplay()" src="../images/contact.png" alt="Contact" title="Informations de contact">
+
+        <div class="textContactInfo">
+            Auteur: Patrick Provost<br>
+            Contact: paterick@mail.com
+        </div>
+    </div>
+
+    <div class="contMap">
+        <object class="worldmap" type="image/svg+xml" data="../svg/united_states.svg">World Map</object>
+    </div>
+
+    <div class="contSpotify">
+        <iframe class="iSpotify" name="iSpotify" src="" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <img class="imgSpotifyLogo" src="../images/spotify_white.png" alt="Spotify">
+    </div>
+
+
+    <div class="contListCity">
+        <ul class="listCity">
+            <p class="itemHeader">Choisissez une ville:</p>
+            <a onclick="hideSpotifyLogo()" href="https://open.spotify.com/embed/playlist/6UhIdjRWhofrYI32vzVuh9" target="iSpotify"><li>Chicago</li></a>
+            <a onclick="hideSpotifyLogo()" href="https://open.spotify.com/embed/playlist/53JqQphsAHvDGGVZErKmW5" target="iSpotify"><li>Los Angeles</li></a>
+            <a onclick="hideSpotifyLogo()" href="https://open.spotify.com/embed/playlist/5thq4HQaIBxOK1vE9bu2nj" target="iSpotify"><li>Dallas</li></a>
+            <a onclick="hideSpotifyLogo()" href="https://open.spotify.com/embed/playlist/7ihMjetICZGO8wxr65fJmx" target="iSpotify"><li>Houston</li></a>
+            <a onclick="hideSpotifyLogo()" href="https://open.spotify.com/embed/playlist/2t6uU8AELDRclkCaw1vydr" target="iSpotify"><li>Atlanta</li></a>
+            <a onclick="hideSpotifyLogo()" href="https://open.spotify.com/embed/playlist/4SMubSJhL8oHG1RNa6RGkQ" target="iSpotify"><li>Seattle</li></a>
+            <a onclick="hideSpotifyLogo()" href="https://open.spotify.com/embed/playlist/7lP1NljSSmtIezSvXaRu1M" target="iSpotify"><li>San Francisco</li></a>
+            <a onclick="hideSpotifyLogo()" href="https://open.spotify.com/embed/playlist/4vH8Fb8fmgM4NELtVHIJQj" target="iSpotify"><li>New York</li></a>
+            <a onclick="hideSpotifyLogo()" href="https://open.spotify.com/embed/playlist/4EVnKjHxMesvcl7MyVLunQ" target="iSpotify"><li>Denver</li></a>
+            <a onclick="hideSpotifyLogo()" href="https://open.spotify.com/embed/playlist/3wEehxo9OFVYfTvdf1PQwW" target="iSpotify"><li>Phoenix</li></a>
+        </ul>
+    </div>
+
+    <script>
+        function toggleSpotifyDisplay() {
+            var elem1 = document.getElementsByClassName("contSpotify").item(0);
+            var elem2 = document.getElementsByClassName("contListCity").item(0);
+            var display = (window.getComputedStyle ? getComputedStyle(elem1, null) : elem1.currentStyle).display;
+            if (display == "none") {
+                elem1.style.display = "inline";
+                elem2.style.display = "list-item";
+            }
+            else {
+                elem1.style.display = "none";
+                elem2.style.display = "none";
+            }
+        }
+
+        function toggleContactDisplay() {
+            var elem = document.getElementsByClassName("textContactInfo").item(0);
+            var display = (window.getComputedStyle ? getComputedStyle(elem, null) : elem.currentStyle).display;
+            if (display == "none")
+                elem.style.display = "inline";
+            else
+                elem.style.display = "none";
+        }
+
+        function hideSpotifyLogo() {
+                document.getElementsByClassName("imgSpotifyLogo").item(0).style.display = "none";
+        }
+    </script>
+</body>
+</html>

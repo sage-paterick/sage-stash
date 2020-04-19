@@ -1,0 +1,118 @@
+.contTopMenu {
+    position: relative;
+    overflow: hidden;
+}
+    .imgLogo {
+        position: fixed;
+        cursor: pointer;
+        margin-top: 0.5%;
+        margin-left: 0.5%;
+        width: 4%;
+        z-index: 1;
+    }
+    .imgToggleSpotify {
+        position: fixed;
+        cursor: pointer;
+        margin-top: 0.5%;
+        margin-left: 5%;
+        width: 4%;
+        z-index: 1;
+    }
+
+.contBottomMenu {
+    position: relative;
+    overflow: hidden;
+}
+    .imgToggleContact {
+        position: fixed;
+        cursor: pointer;
+        margin-left: 0.5%;
+        margin-bottom: 0.5%;
+        bottom: 0;
+        width: 4%;
+        z-index: 1;
+    }
+    .textContactInfo {
+        position: fixed;
+        margin-left: 5%;
+        margin-bottom: 1.5%;
+        bottom: 0;
+        font-size:1vw;
+        z-index: 1;
+        display: none;
+    }
+
+.contMap {
+    position: relative;
+    overflow: hidden;
+}
+    .worldmap {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+.contListCity{
+    position: relative;
+    overflow: hidden;
+}
+    .listCity {
+        position: fixed;
+        list-style: none;
+        /*margin-top: 80px;*/
+        margin-left: 45%;
+        width: 15%;
+        height: 100%;
+        overflow-y: scroll;
+        }
+        .itemHeader {
+            background-color: #282828;
+            color: #ffffff;
+            font-size: 1.5vw;
+            padding-left: 4%;
+            padding-top: 4%;
+            padding-right: 0;
+            padding-bottom: 6%;
+            z-index: 1;
+        }
+        .listCity li {
+            background-color: #282828;
+            color: #ffffff;
+            font-size: 1vw;
+            padding-left: 12%;
+            padding-top: 1%;
+            padding-right: 0;
+            padding-bottom: 5%;
+            z-index: 1;
+        }
+        .listCity a{
+            text-decoration-line: none;
+        }
+        .listCity a:hover{
+            text-decoration-line: underline;
+            text-decoration-color: #1DB954;
+
+        }
+
+.contSpotify {
+    position: relative;
+    overflow: hidden;
+}
+    .iSpotify {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: 100%;
+        z-index: 1;
+        background-color: #282828;
+    }
+    .imgSpotifyLogo {
+        position: fixed;
+        top: 44%;
+        right: 17%;
+        width: 6%;
+        z-index: 1;
+    }
