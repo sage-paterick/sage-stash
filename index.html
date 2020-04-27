@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
     <div class="contTopMenu">
@@ -27,16 +28,5 @@
     <div class="contMap">
         <object class="worldmap" type="image/svg+xml" data="svg/index.svg">World Map</object>
     </div>
-
-    <script>
-        function toggleContactDisplay() {
-            var elem = document.getElementsByClassName("textContactInfo").item(0);
-            var display = (window.getComputedStyle ? getComputedStyle(elem, null) : elem.currentStyle).display;
-            if (display == "none")
-                elem.style.display = "inline";
-            else
-                elem.style.display = "none";
-        }
-    </script>
 </body>
 </html>

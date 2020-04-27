@@ -10,6 +10,9 @@
         width: 4%;
         z-index: 1;
     }
+    .imgLogo:active {
+        transform: translate(1px, 1px);
+    }
     .imgToggleSpotify {
         position: fixed;
         cursor: pointer;
@@ -18,6 +21,10 @@
         width: 4%;
         z-index: 1;
     }
+    .imgToggleSpotify:active {
+        transform: translate(1px, 1px);
+    }
+
 
 .contBottomMenu {
     position: relative;
@@ -32,12 +39,15 @@
         width: 4%;
         z-index: 1;
     }
+    .imgToggleContact:active {
+        transform: translate(1px, 1px);
+    }
     .textContactInfo {
         position: fixed;
         margin-left: 5%;
         margin-bottom: 1.5%;
         bottom: 0;
-        font-size:1vw;
+        font-size: 1vw;
         z-index: 1;
         display: none;
     }
@@ -48,8 +58,8 @@
 }
     .worldmap {
         position: fixed;
-        height: 100%;
         width: 100%;
+        height: 100%;
         top: 0;
         left: 0;
     }
@@ -57,15 +67,16 @@
 .contListCity{
     position: relative;
     overflow: hidden;
+    display: none;
 }
     .listCity {
         position: fixed;
         list-style: none;
-        /*margin-top: 80px;*/
         margin-left: 45%;
         width: 15%;
-        height: 100%;
-        overflow-y: scroll;
+        max-height: 100%;
+        overflow-y: auto;
+        z-index: 1;
         }
         .itemHeader {
             background-color: #282828;
@@ -75,7 +86,6 @@
             padding-top: 4%;
             padding-right: 0;
             padding-bottom: 6%;
-            z-index: 1;
         }
         .listCity li {
             background-color: #282828;
@@ -85,7 +95,6 @@
             padding-top: 1%;
             padding-right: 0;
             padding-bottom: 5%;
-            z-index: 1;
         }
         .listCity a{
             text-decoration-line: none;
@@ -93,7 +102,6 @@
         .listCity a:hover{
             text-decoration-line: underline;
             text-decoration-color: #1DB954;
-
         }
 
 .contSpotify {
@@ -104,15 +112,15 @@
         position: fixed;
         top: 0;
         right: 0;
-        width: 40%;
-        height: 100%;
+        height: 80px;
         z-index: 1;
         background-color: #282828;
     }
-    .imgSpotifyLogo {
-        position: fixed;
-        top: 44%;
-        right: 17%;
-        width: 6%;
-        z-index: 1;
-    }
+
+@media screen and (min-width: 500px) { .iSpotify { width: 45% } .listCity { margin-left: 40%; } }
+@media screen and (min-width: 800px) { .iSpotify { width: 40% } .listCity { margin-left: 45%; } }
+@media screen and (min-width: 1024px) { .iSpotify { width: 35% } .listCity { margin-left: 50%; } }
+@media screen and (min-width: 1600px) { .iSpotify { width: 30% } .listCity { margin-left: 55%; } }
+@media screen and (min-width: 1920px) { .iSpotify { width: 25% } .listCity { margin-left: 60%; } }
+@media screen and (min-width: 2560px) { .iSpotify { width: 20% } .listCity { margin-left: 65%; } }
+@media screen and (min-width: 3840px) { .iSpotify { width: 15% } .listCity { margin-left: 70%; } }
