@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voyage musical</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Patrick Provost">
+    <meta name="description" content="Explorez le monde à travers son héritage musical.">
+    <meta name="keywords" content="musique,monde">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/world.css">
+    <script type="text/javascript" src="../js/world.js"></script>
+</head>
+<body>
+    <div class="contTopMenu">
+        <a href="world.html"><img class="imgLogo" src="../images/logo.png" alt="Logo" title="Menu"></a>
+    </div>
+
+    <div class="contBottomMenu">
+        <div class="textContactInfo">
+            Auteur: Patrick Provost<br>
+            Contact: paterick@mail.com
+        </div>
+
+        <img class="imgToggleContact" onclick="toggleContactDisplay()" src="../images/contact.png" alt="Contact" title="Informations de contact">
+    </div>
+
+    <div class="contMap">
+        <object class="worldmap" type="image/svg+xml" data="../svg/united_states.svg">World Map</object>
+    </div>
+
+    <div class="contSpotify">
+        <iframe class="iSpotify" name="iSpotify" src="https://open.spotify.com/embed/playlist/6SXqTPTGz3FXZ7JZgrTa6S" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        
+        <div class="contArrows">
+            <div onclick="toggleSpotifyWidth()" class="contArrowWidth">
+                <div class="lineW1"></div>
+                <div class="lineW2"></div>
+            </div>
+            <div class="lineMiddle"></div>
+            <div onclick="toggleSpotifyHeight()" class="contArrowHeight">
+                <div class="lineH1"></div>
+                <div class="lineH2"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contListCity">
+        <ul class="listCity">
+            <p class="itemHeader">Choisissez une ville:</p>
+            <a href="" target="iSpotify"><li></li></a>
+        </ul>
+    </div>
+</body>
+</html>

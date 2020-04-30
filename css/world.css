@@ -1,0 +1,194 @@
+.contTopMenu {
+    position: relative;
+}
+    .imgLogo {
+        position: fixed;
+        cursor: pointer;
+        margin-top: 0.5%;
+        margin-left: 0.5%;
+        width: 4%;
+        z-index: 1;
+    }
+    .imgLogo:active {
+        transform: translate(1px, 1px);
+    }
+
+.contBottomMenu {
+    position: relative;
+}
+    .imgToggleContact {
+        position: fixed;
+        cursor: pointer;
+        margin-left: 0.5%;
+        margin-bottom: 0.5%;
+        bottom: 0;
+        width: 4%;
+        z-index: 1;
+    }
+    .imgToggleContact:active {
+        transform: translate(1px, 1px);
+    }
+    .textContactInfo {
+        position: fixed;
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 20px;
+        margin-left: 3.3%;
+        margin-bottom: 1.3%;
+        bottom: 0;
+        padding-left: 1.5%;
+        padding-top: 0.2%;
+        padding-right: 1%;
+        padding-bottom: 0.2%;
+        font-size: 1vw;
+        z-index: 1;
+        display: none;
+    }
+
+.contMap {
+    position: relative;
+}
+    .worldmap {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+.contListCity{
+    position: relative;
+    display: none;
+}
+    .listCity {
+        position: fixed;
+        list-style: none;
+        margin-left: 45%;
+        width: 15%;
+        max-height: 100%;
+        overflow-y: auto;
+        z-index: 1;
+        }
+        .itemHeader {
+            background-color: #282828;
+            color: #ffffff;
+            font-size: 1.5vw;
+            padding-left: 4%;
+            padding-top: 4%;
+            padding-right: 0;
+            padding-bottom: 6%;
+        }
+        .listCity li {
+            background-color: #282828;
+            color: #ffffff;
+            font-size: 1vw;
+            padding-left: 12%;
+            padding-top: 1%;
+            padding-right: 0;
+            padding-bottom: 5%;
+        }
+        .listCity a{
+            text-decoration-line: none;
+        }
+        .listCity a:hover{
+            text-decoration-line: underline;
+            text-decoration-color: #1DB954;
+        }
+
+.contSpotify {
+    position: relative;
+}
+    .iSpotify {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 80px;
+        z-index: 1;
+        background-color: #282828;
+        transition: 0.3s width linear, 0.4s height linear;
+    }
+    .contArrows {
+        position: fixed;
+        cursor: pointer;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 80px;
+        z-index: 1;
+        background-color: #282828;
+        transition: 0.3s right linear;
+    }
+        .contArrowWidth {
+            position: static;
+            height: 50%;
+        }
+        .contArrowWidth:hover {
+            background-color: #3C3C3C;
+        }
+            .lineW1 {
+                position: absolute;
+                top: 16%;
+                left: 29%;
+                width: 45%;
+                height: 6%;
+                transform: rotate(45deg);
+                background-color: #ffffff;
+                border-radius: 20px;
+                transition: 0.3s transform linear;
+            }
+            .lineW2 {
+                position: absolute;
+                top: 29%;
+                left: 29%;
+                width: 45%;
+                height: 6%;
+                transform: rotate(-45deg);
+                background-color: #ffffff;
+                border-radius: 20px;
+                transition: 0.3s transform linear;
+            }
+        .lineMiddle {
+            position: absolute;
+            top: 49.5%;
+            width: 100%;
+            height: 1%;
+            background-color: #666666;
+        }
+        .contArrowHeight {
+            position: static;
+            height: 50%;
+        }
+        .contArrowHeight:hover {
+            background-color: #3C3C3C;
+        }
+            .lineH1 {
+                position: absolute;
+                top: 74%;
+                left: 15%;
+                width: 45%;
+                height: 6%;
+                transform: rotate(45deg);
+                background-color: #ffffff;
+                border-radius: 20px;
+                transition: 0.4s transform linear;
+            }
+            .lineH2 {
+                position: absolute;
+                top: 74%;
+                left: 39%;
+                width: 45%;
+                height: 6%;
+                transform: rotate(-45deg);
+                background-color: #ffffff;
+                border-radius: 20px;
+                transition: 0.4s transform linear;
+            }
+
+@media screen and (min-width:    1px) { .iSpotify { width: 50%; } .listCity { margin-left: 30%; } .contArrows { right: 50%; } }
+@media screen and (min-width:  600px) { .iSpotify { width: 45%; } .listCity { margin-left: 35%; } .contArrows { right: 45%; } }
+@media screen and (min-width:  800px) { .iSpotify { width: 40%; } .listCity { margin-left: 40%; } .contArrows { right: 40%; } }
+@media screen and (min-width: 1024px) { .iSpotify { width: 35%; } .listCity { margin-left: 45%; } .contArrows { right: 35%; } }
+@media screen and (min-width: 1600px) { .iSpotify { width: 30%; } .listCity { margin-left: 50%; } .contArrows { right: 30%; } }
+@media screen and (min-width: 1920px) { .iSpotify { width: 25%; } .listCity { margin-left: 55%; } .contArrows { right: 25%; } }
+@media screen and (min-width: 2560px) { .iSpotify { width: 20%; } .listCity { margin-left: 60%; } .contArrows { right: 20%; } }
+@media screen and (min-width: 3840px) { .iSpotify { width: 15%; } .listCity { margin-left: 65%; } .contArrows { right: 15%; } }
